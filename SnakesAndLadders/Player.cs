@@ -10,11 +10,14 @@ namespace SnakesAndLadders
     {
         public long id { get; set; }
         public string name { get; set; }
+        public Square position { get; set; }
 
-        public Player(long id, string name)
+        public Player(long id, string name, Square initialPosition)
         {
             this.id = id;
             this.name = name;
+            //simepre inicializamos la posicion inicial a 0
+            this.position = initialPosition;
         }
     }
 }
