@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SnakesAndLadders
 {
-    public class Class1
+    internal class Game
     {
+        public Board board { get; set; }
+        public List<Player> players { get; set; }
     }
 }
